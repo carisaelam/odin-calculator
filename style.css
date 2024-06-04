@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Orbitron", monospace;
+}
+
+body {
+  background-color: var(--contrast);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.title h1 {
+  color: var(--darkest);
+}
+
+.calculator {
+  width: 200px;
+  height: auto;
+  background-color: var(--darkest);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.results {
+  max-width: 100%;
+  padding: 10px 5px;
+  overflow: hidden;
+  height: 60px;
+  background-color: rgb(180, 178, 178);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: baseline;
+  gap: 5px;
+  border-radius: 3px;
+}
+
+.results p {
+  color: rgb(51, 55, 55);
+  font-family: "VT323", monospace;
+  font-weight: bolder;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-left: 2px;
+  padding: 0;
+  font-size: 5vw;
+}
+
+.btn {
+  border: none;
+  width: 30px;
+  height: 20px;
+  color: var(--darkest);
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 3px 1px;
+  font-family: "VT323", monospace;
+}
+
+.number {
+  background-color: var(--low-contrast);
+  width: 55px;
+}
+
+.operator-btns {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Orbitron", monospace;
+  font-size: 3rem;
+}
+
+#equal-btn {
+  width: 100%;
+}
+
+.operator {
+  background-color: var(--med-contrast);
+  width: 39px;
+  font-size: 1.25rem;
+  margin: 3px;
+  height: 25px;
+}
+
+#clear-btn {
+  background-color: var(--high-contrast);
+}
+
+#on {
+  background-color: var(--med-contrast);
+}
+
+/* colors */
+:root {
+  --darkest: #155263;
+  --high-contrast: #ff6f3c;
+  --med-contrast: #ff9a3c;
+  --low-contrast: #ffc93c;
+}
